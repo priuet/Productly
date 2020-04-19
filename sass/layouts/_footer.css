@@ -1,0 +1,15 @@
+.footer {
+  padding: 60px 0 70px;
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.footer__navigation {
+  flex-grow: 1;
+}
+
+.footer-navigation__title {
+  margin-bottom: 15px;
+}

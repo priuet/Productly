@@ -1,5 +1,8 @@
 .wrapper  {
     max-width: $content-width;
-    outline: hotpink dashed 1px;
     margin: auto;
+    @include media-laptop {
+        padding: 0 47px;
+        
+    }
 }

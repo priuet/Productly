@@ -1,0 +1,1 @@
+.hamburger::before,.hamburger::after,.hamburger__line{content:" ";background:#173A56;border-radius:5px;height:3px;width:100%;display:block;position:absolute}.hamburger{display:none;width:31px;height:25px;display:inline-block;position:relative}.hamburger::before{top:0;left:0}.hamburger::after{left:0;bottom:0}.hamburger__line{top:calc(50% - 2px);left:0}

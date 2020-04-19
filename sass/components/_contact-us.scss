@@ -1,0 +1,38 @@
+.contact-us {
+    background: $color-background;
+    padding: 62px 82px;
+}
+.contact-us__line {
+    margin-bottom: 19px;
+    display: inline-block;
+}
+.contact-us__form {
+    input, textarea {
+        border: none;
+        border-radius: 5px;
+        background: $color-light;
+        padding: 10px 21px;
+        resize: none;
+    }
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 160px;
+    }
+}
+.contact-us__button {
+    width: 117px;
+}
+.contact-us__link {
+    margin: 0 0 19px;
+    margin-left: 11px;
+    color: $color-text;
+    text-decoration: none;
+    @include font($size: 2.5rem, $height: 2.6rem, $weight: normal);
+    @include media-tablet {
+        justify-content: center;
+    }
+    &:hover {
+            text-decoration: underline;
+        }
+}

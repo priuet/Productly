@@ -1,0 +1,36 @@
+%hamburger-line {
+    content: " ";
+    background: #173A56;
+    border-radius: 5px;
+    height: 3px;
+    width: 100%;
+    display: block;
+    position: absolute;
+} // локальный placeholder
+
+.hamburger {
+    display: none;
+    width: 31px;
+    height: 25px;
+    position: relative;
+    margin-right: 37px;
+    &::before {
+        @extend %hamburger-line;
+        top:0;
+        left: 0;
+    }
+    &::after {
+        @extend %hamburger-line;
+        left: 0;
+        bottom: 0;
+    }
+    @include media-tablet {
+        display: inline-block;
+        margin-right: 37px;
+    }
+}
+.hamburger__line {
+    @extend %hamburger-line;
+    top: calc(50% - 2px);
+    left:0;
+}

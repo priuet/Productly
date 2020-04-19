@@ -9,7 +9,7 @@
     cursor: pointer;
     transition: all .3s;
     &_bordered {
-        background: $color-lite;
+        background: $color-light;
         border: 1px solid $color-border;
         color: $color-text;
         &:hover {
@@ -18,25 +18,25 @@
     }
     &_colored {
         background: $color-primary;
-        color: $color-lite;
+        color: $color-light;
         border: none;
         &:hover {
             background: $color-additional;
         }      
     }
 }
-// .button_bordered {
-//     background: $color-lite;
-//     border: 1px solid $color-border;
-//     color: $color-text;
-// // }
-// .button_bordered:hover {
-// }
-// // .button_colored {
-// //     background: $color-primary;
-// //     color: $color-lite;
-// //     border: none;
-// // }
-// .button_colored:hover {
-//     background: $color-additional;
-// }
+.link-button__text {
+    color: $color-primary;
+} 
+.link-button  {
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.link-button:hover {
+    color: #F03E3D;
+}
+  
+.link-button__text {
+    margin-left: 9px;
+}
