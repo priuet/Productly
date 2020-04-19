@@ -1,10 +1,16 @@
 .contact-us {
     background: $color-background;
     padding: 62px 82px;
+    @include media-mobile {
+        padding: 10px 0 49px;
+    }
 }
 .contact-us__line {
     margin-bottom: 19px;
     display: inline-block;
+    @include media-mobile {
+        width: 70%;
+    }
 }
 .contact-us__form {
     input, textarea {
@@ -13,15 +19,25 @@
         background: $color-light;
         padding: 10px 21px;
         resize: none;
+        @include media-mobile {
+            margin-bottom: 10px;
+            width: 70%;
+        }
     }
     textarea {
         resize: none;
         width: 100%;
         height: 160px;
+        @include media-mobile {
+            width: 70%;
+        }
     }
 }
 .contact-us__button {
     width: 117px;
+    @include media-mobile {
+        padding: 0 101px;
+    }
 }
 .contact-us__link {
     margin: 0 0 19px;
@@ -35,4 +51,11 @@
     &:hover {
             text-decoration: underline;
         }
+    @include media-mobile {
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+}
+.layout-2-column > * {
+    flex-basis: 88%;
 }

@@ -17,7 +17,18 @@
 }
 .strategy__content {
     padding: 24px 33px 26px;
+    @include media-mobile {
+        padding: 25px 30px;
+    }
 }
 .strategy__name {
     margin: 0 0 29px;
+    @include media-mobile {
+        margin: 0;
+    }
+}
+.strategy__image {
+    @include media-mobile {
+        width: 280px;
+    }
 }

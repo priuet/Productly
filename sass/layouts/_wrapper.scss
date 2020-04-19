@@ -5,4 +5,7 @@
         padding: 0 47px;
         
     }
+    @include media-mobile {
+        padding: 0 22px;
+    }
 }

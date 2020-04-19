@@ -1,5 +1,9 @@
 .layout-4-column {
     @include columns($width:21%);
+    @include media-mobile {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .layout-3-column {
@@ -13,4 +17,7 @@
 
 .layout-2-column {
     @include columns($width:48%);
+    @include media-mobile {
+        $width: 90%;
+    }
 }
