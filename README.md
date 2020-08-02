@@ -1,4 +1,4 @@
 # Productly
 Productly responsive version
 
-https://priuet.github.io/Productly/
+https://priuet.github.io/productly/
